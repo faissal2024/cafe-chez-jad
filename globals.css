@@ -1,0 +1,7 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { background: #FAF5EA; color: #141110; }
+[dir="rtl"] body, [dir="rtl"] .font-display { font-family: var(--font-arabic), system-ui, sans-serif; }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise .5s ease both; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, .rise { animation: none !important; transition: none !important; } }
